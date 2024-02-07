@@ -7,6 +7,7 @@ const redColor = document.getElementById("red-color");
 const blueColor = document.getElementById("blue-color");
 const greenColor = document.getElementById("green-color");
 const orangeColor = document.getElementById("orange-color");
+const colors = document.querySelectorAll(".color");
 
 registerBtn.addEventListener("click", () => {
   container.classList.add("active");
@@ -55,4 +56,12 @@ orangeColor.addEventListener("click", (event) => {
   const color = computedStyle.backgroundColor;
   changeButtonColors(color);
   changeToggleColor(color);
+});
+
+colors.forEach((color) => {
+  color.addEventListener("click", (event) => {
+    const cs = window.getComputedStyle(color);
+    const bgc = cs.backgroundColor;
+    console.log(bgc);
+  });
 });
