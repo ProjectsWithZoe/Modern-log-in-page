@@ -30,38 +30,11 @@ function changeToggleColor(color) {
   });
 }
 
-redColor.addEventListener("click", (event) => {
-  const computedStyle = window.getComputedStyle(event.target);
-  const color = computedStyle.backgroundColor;
-  changeButtonColors(color);
-  changeToggleColor(color);
-});
-
-blueColor.addEventListener("click", (event) => {
-  const computedStyle = window.getComputedStyle(event.target);
-  const color = computedStyle.backgroundColor;
-  changeButtonColors(color);
-  changeToggleColor(color);
-});
-
-greenColor.addEventListener("click", (event) => {
-  const computedStyle = window.getComputedStyle(event.target);
-  const color = computedStyle.backgroundColor;
-  changeButtonColors(color);
-  changeToggleColor(color);
-});
-
-orangeColor.addEventListener("click", (event) => {
-  const computedStyle = window.getComputedStyle(event.target);
-  const color = computedStyle.backgroundColor;
-  changeButtonColors(color);
-  changeToggleColor(color);
-});
-
 colors.forEach((color) => {
   color.addEventListener("click", (event) => {
-    const cs = window.getComputedStyle(color);
-    const bgc = cs.backgroundColor;
-    console.log(bgc);
+    const computedStyle = window.getComputedStyle(color);
+    const clickedColor = computedStyle.backgroundColor;
+    changeButtonColors(clickedColor);
+    changeToggleColor(clickedColor);
   });
 });
