@@ -47,17 +47,17 @@ body {
   cursor: pointer;
 }
 
-.red-color {
-  background-color: red;
+#red-color {
+  background-color: #fd6d6d;
 }
-.blue-color {
-  background-color: blue;
+#blue-color {
+  background-color: #7070d4;
 }
-.green-color {
-  background-color: green;
+#green-color {
+  background-color: #63a85a;
 }
-.orange-color {
-  background-color: orange;
+#orange-color {
+  background-color: #fc8d4c;
 }
 
 .container p {
@@ -197,7 +197,7 @@ body {
 .toggle {
   background-color: #512da8;
   height: 100%;
-  background: linear-gradient(to right, #5c6bc0, #512da8);
+  background: linear-gradient(to right, grey, #512da8);
   color: #fff;
   position: relative;
   left: -100%;
